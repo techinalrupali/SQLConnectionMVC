@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h3>Add New Employee</h3>
+<div class="container">
+    @{ Html.BeginForm();}
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Employee Name")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("name")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Employee Salary")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("salary")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Employee Department")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("department")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-3">
+            <input type="submit" value="Save" class="btn btn-success" />
+        </div>
+    </div>
+    @{Html.EndForm();}
+</div>
